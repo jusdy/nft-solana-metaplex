@@ -226,10 +226,10 @@ const CategoryStep = (props: {
     <>
       <Row className="call-to-action">
         <h2>Create a new item</h2>
-        <p>
+        {/* <p>
           First time creating on Metaplex?{' '}
           <a href="#">Read our creators’ guide.</a>
-        </p>
+        </p> */}
       </Row>
       <Row justify={width < 768 ? 'center' : 'start'}>
         <Col>
@@ -346,14 +346,15 @@ const UploadStep = (props: {
   return (
     <>
       <Row className="call-to-action">
-        <h2>Now, let's upload your creation</h2>
-        <p style={{ fontSize: '1.2rem' }}>
+        {/* <h2>Now, let's upload your creation</h2> */}
+        <h2>Upload your Image</h2>
+        {/* <p style={{ fontSize: '1.2rem' }}>
           Your file will be uploaded to the decentralized web via Arweave.
           Depending on file type, can take up to 1 minute. Arweave is a new type
           of storage that backs data with sustainable and perpetual endowments,
           allowing users and developers to truly store data forever – for the
           very first time.
-        </p>
+        </p> */}
       </Row>
       <Row className="content-action">
         <h3>Upload a cover image (PNG, JPG, GIF, SVG)</h3>
@@ -414,7 +415,7 @@ const UploadStep = (props: {
           </Dragger>
         </Row>
       )}
-      <Form.Item
+      {/* <Form.Item
         style={{
           width: '100%',
           flexDirection: 'column',
@@ -450,7 +451,7 @@ const UploadStep = (props: {
             }
           }}
         />
-      </Form.Item>
+      </Form.Item> */}
       <Row>
         <Button
           type="primary"
@@ -482,7 +483,7 @@ const UploadStep = (props: {
             props.setFiles([coverFile, mainFile].filter(f => f) as File[]);
             props.confirm();
           }}
-          style={{ marginTop: 24 }}
+          style={{ marginTop: 50 }}
           className="action-btn"
         >
           Continue to Mint
@@ -1149,13 +1150,13 @@ const Congrats = (props: {
     <>
       <div className="waiting-title">Congratulations, you created an NFT!</div>
       <div className="congrats-button-container">
-        <Button
+        {/* <Button
           className="metaplex-button"
           onClick={_ => window.open(newTweetURL(), '_blank')}
         >
           <span>Share it on Twitter</span>
           <span>&gt;</span>
-        </Button>
+        </Button> */}
         <Button
           className="metaplex-button"
           onClick={_ =>
@@ -1165,13 +1166,13 @@ const Congrats = (props: {
           <span>See it in your collection</span>
           <span>&gt;</span>
         </Button>
-        <Button
+        {/* <Button
           className="metaplex-button"
           onClick={_ => history.push('/auction/create')}
         >
           <span>Sell it via auction</span>
           <span>&gt;</span>
-        </Button>
+        </Button> */}
       </div>
       <Confetti />
     </>

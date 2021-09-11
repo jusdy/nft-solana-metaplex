@@ -487,15 +487,16 @@ export function Notifications() {
       content={content}
       trigger="click"
     >
-      <h1 className="title">M</h1>
+      {/* <h1 className="title">M</h1> */}
     </Popover>
   );
 
-  if (notifications.length === 0) return justContent;
-  else
-    return (
-      <Badge count={notifications.length} style={{ backgroundColor: 'white' }}>
-        {justContent}
-      </Badge>
-    );
+  // if (notifications.length === 0) return justContent;
+  // else
+  //   return (
+  //     <Badge count={notifications.length} style={{ backgroundColor: 'white' }}>
+  //       {justContent}
+  //     </Badge>
+  //   );
+  return justContent;
 }

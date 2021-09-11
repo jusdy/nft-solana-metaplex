@@ -32,11 +32,11 @@ const UserActions = () => {
               <Button className="app-btn">Create</Button>
             </Link>
           ) : null}
-          <Link to={`/auction/create/0`}>
+          {/* <Link to={`/auction/create/0`}>
             <Button className="connector" type="primary">
               Sell
             </Button>
-          </Link>
+          </Link> */}
         </>
       )}
     </>
@@ -52,17 +52,17 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
         flexDirection: vertical ? 'column' : 'row',
       }}
     >
-      <Link to={`/`}>
+      {/* <Link to={`/`}>
         <Button className="app-btn">Explore</Button>
-      </Link>
+      </Link> */}
       <Link to={`/artworks`}>
         <Button className="app-btn">
           {connected ? 'My Items' : 'Artworks'}
         </Button>
       </Link>
-      <Link to={`/artists`}>
+      {/* <Link to={`/artists`}>
         <Button className="app-btn">Creators</Button>
-      </Link>
+      </Link> */}
     </div>
   );
 };
@@ -80,11 +80,11 @@ const MetaplexMenu = () => {
           trigger={['click']}
           overlay={
             <Menu>
-              <Menu.Item>
+              {/* <Menu.Item>
                 <Link to={`/`}>
                   <Button className="app-btn">Explore</Button>
                 </Link>
-              </Menu.Item>
+              </Menu.Item> */}
               <Menu.Item>
                 <Link to={`/artworks`}>
                   <Button className="app-btn">
@@ -92,11 +92,11 @@ const MetaplexMenu = () => {
                   </Button>
                 </Link>
               </Menu.Item>
-              <Menu.Item>
+              {/* <Menu.Item>
                 <Link to={`/artists`}>
                   <Button className="app-btn">Creators</Button>
                 </Link>
-              </Menu.Item>
+              </Menu.Item> */}
             </Menu>
           }
         >
@@ -115,7 +115,7 @@ export const AppBar = () => {
     <>
       <div className="app-left app-bar-box">
         {window.location.hash !== '#/analytics' && <Notifications />}
-        <div className="divider" />
+        {/* <div className="divider" /> */}
         <MetaplexMenu />
       </div>
       {connected ? (
